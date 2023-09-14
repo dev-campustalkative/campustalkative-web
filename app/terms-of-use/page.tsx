@@ -28,11 +28,12 @@ const TermsAndConditions = () => {
             Terms and Conditions
           </h2>
           <p className="mb-6">
-            These Terms and Conditions ("Agreement") govern your use of the
-            Campustalkative platform ("Platform") provided by Campustalkative
-            ("Company," "we," or "us"). By accessing or using the Platform, you
-            agree to be bound by these Terms and Conditions. If you do not agree
-            with any part of this Agreement, you should not use the Platform.
+            These Terms and Conditions (&rdquo;Agreement&rdquo;) govern your use
+            of the Campustalkative platform (&rdquo;Platform&rdquo;) provided by
+            Campustalkative (&rdquo;Company,&rdquo; &rdquo;we,&rdquo; or
+            &rdquo;us&rdquo;). By accessing or using the Platform, you agree to
+            be bound by these Terms and Conditions. If you do not agree with any
+            part of this Agreement, you should not use the Platform.
           </p>
           <div className="mx-20">
             <h2 className="text-2xl font-bold mb-8 mt-12 text-primary">
@@ -52,8 +53,8 @@ const TermsAndConditions = () => {
                 </span>
                 You agree not to engage in any unlawful, harmful, or abusive
                 behavior while using the Platform, including but not limited to
-                harassment, discrimination, or unauthorized access to others'
-                accounts.
+                harassment, discrimination, or unauthorized access to
+                others&quot; accounts.
               </li>
               <li className="flex items-start">
                 <span className="text-xl font-bold text-gray-600 w-6 mr-4 inline-block">
@@ -103,9 +104,9 @@ const TermsAndConditions = () => {
                 <span className="text-xl font-bold text-gray-600 w-6 mr-4 inline-block">
                   3.1
                 </span>
-                The Platform is provided on an "as is" basis, and we make no
-                warranties or representations regarding its availability,
-                accuracy, or reliability.
+                The Platform is provided on an &rdquo;as is&rdquo; basis, and we
+                make no warranties or representations regarding its
+                availability, accuracy, or reliability.
               </li>
               <li className="flex items-start">
                 <span className="text-xl font-bold text-gray-600 w-6 mr-4 inline-block">
