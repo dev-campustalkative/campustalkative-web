@@ -1,4 +1,4 @@
-import './globals.css';
+import '@/styles/globals.css';
 import { Raleway } from 'next/font/google';
 import Navbar from '@/components/navbar/navbar';
 import Footer from '@/components/footer';
