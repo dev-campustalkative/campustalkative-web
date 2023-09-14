@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 0 0% 63.9%;
+
+    --radius: 0.5rem;
+
+    --ct-primary-100: #fff7ec;
+    --ct-primary-200: #ffe6c0;
+    --ct-primary-300: #ffd595;
+    --ct-primary-400: #ffc46a;
+    --ct-primary-500: #f2aa3c;
+    --ct-primary-600: #d08e29;
+    --ct-primary-700: #ae7319;
+    --ct-primary-800: #8c5a0d;
+    --ct-primary-900: #6a4204;
+    --ct-primary-1000: #482c00;
+    --ct-primary-1100: #050c0a;
+
+    --ct-secondary-100: #fbf6f1;
+    --ct-secondary-200: #f8f1e8;
+    --ct-secondary-300: #f5eadd;
+    --ct-secondary-400: #f1e2d2;
+    --ct-secondary-500: #eedbc6;
+    --ct-secondary-600: #ead4bb;
+    --ct-secondary-700: #c3b19c;
+    --ct-secondary-800: #9c8d7d;
+    --ct-secondary-900: #756a5e;
+    --ct-secondary-1000: #4e473e;
+    --ct-secondary-1100: #2f2a25;
+
+    --ct-grey-100: #fffefc;
+    --ct-grey-200: #d1cfcc;
+    --ct-grey-300: #b2b0ab;
+    --ct-grey-400: #8c8880;
+    --ct-grey-500: #666056;
+    --ct-grey-600: #3f392c;
+    --ct-grey-700: #191102;
+    --ct-grey-800: #150e02;
+    --ct-grey-900: #0d0901;
+    --ct-grey-1000: #050300;
+
+    --ct-red-100: #ebd0d0;
+    --ct-red-200: #deb1b1;
+    --ct-red-300: #cd8a8a;
+    --ct-red-400: #bc6262;
+    --ct-red-500: #ac3b3b;
+    --ct-red-600: #9b1414;
+    --ct-red-700: #811111;
+    --ct-red-800: #670d0d;
+    --ct-red-900: #4e0a0a;
+    --ct-red-1000: #340707;
+    --ct-red-1100: #1f0404;
+
+    --ct-yellow-100: #fff1cc;
+    --ct-yellow-200: #ffe7aa;
+    --ct-yellow-300: #ffdc80;
+    --ct-yellow-400: #ffd055;
+    --ct-yellow-500: #ffc42b;
+    --ct-yellow-600: #ffb800;
+    --ct-yellow-700: #d59900;
+    --ct-yellow-800: #aa7b00;
+    --ct-yellow-900: #805c00;
+    --ct-yellow-1000: #553d00;
+    --ct-yellow-1100: #332500;
+
+    --ct-white: #ffffff;
+
+    --ct-green-100: #cdf2e2;
+    --ct-green-200: #ace9cf;
+    --ct-green-300: #82dfb8;
+    --ct-green-400: #58d4a0;
+    --ct-green-500: #2fc988;
+    --ct-green-600: #05be70;
+    --ct-green-700: #049e5d;
+    --ct-green-800: #037f4b;
+    --ct-green-900: #035f38;
+    --ct-green-1000: #023f25;
+    --ct-green-1100: #012616;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+
+    --ring: 0 0% 14.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html,
+body,
+:root {
+  height: 100%;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: var(--ct-primary-100);
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: url('/assets/fonts/Sora-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sora';
+  src: url('/assets/fonts/Sora-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sora';
+  src: url('/assets/fonts/Sora-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: url('/assets/fonts/Sora-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sora';
+  src: url('/assets/fonts/Sora-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sora';
+  src: url('/assets/fonts/Sora-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sora';
+  src: url('/assets/fonts/Sora-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: url('/assets/fonts/Sora-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: url('/assets/fonts/Sora-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 5s linear infinite;
+}
+
+/* CSS file */
+.animate-pause {
+  animation-play-state: paused !important;
+}
+
+.bg-none-md {
+  @media screen and (max-width: 820px) {
+    background: none !important;
+  }
+}
+
+@keyframes animate-gradient-slide {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+/* Optional: Adjust the animation duration and easing */
+.animate-gradient-slide {
+  background-image: linear-gradient(45deg, #ff3f9f, #ff6ec4, #a25eff);
+  background-size: 200% 200%;
+  animation: animate-gradient-slide 3s linear infinite;
+}
