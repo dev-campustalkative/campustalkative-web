@@ -164,7 +164,7 @@ body,
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
   background: var(--ct-primary-100);
 }
 
