@@ -12,28 +12,16 @@ const Team = () => {
       </div>
       <div className="grid mlg:grid-cols-4 mmd:grid-cols-3 md:grid-cols-2 gap-4">
         <div className="w-[236px] h-[236px] md:w-[151px] md:h-[151px]">
-          <ImageSlug />
+          <ImageSlug src="/assets/images/--ct-team-1.jpg" />
         </div>
         <div className="w-[236px] h-[236px] md:w-[151px] md:h-[151px]">
-          <ImageSlug />
+          <ImageSlug src="/assets/images/--ct-team-2.jpg" />
         </div>
         <div className="w-[236px] h-[236px] md:w-[151px] md:h-[151px]">
-          <ImageSlug />
+          <ImageSlug src="/assets/images/--ct-team-3.jpg" />
         </div>
         <div className="w-[236px] h-[236px] md:w-[151px] md:h-[151px]">
-          <ImageSlug />
-        </div>
-        <div className="w-[236px] h-[236px] md:w-[151px] md:h-[151px]">
-          <ImageSlug />
-        </div>
-        <div className="w-[236px] h-[236px] md:w-[151px] md:h-[151px]">
-          <ImageSlug />
-        </div>
-        <div className="w-[236px] h-[236px] md:w-[151px] md:h-[151px]">
-          <ImageSlug />
-        </div>
-        <div className="w-[236px] h-[236px] md:w-[151px] md:h-[151px]">
-          <ImageSlug />
+          <ImageSlug src="/assets/images/--ct-team-5.jpeg" />
         </div>
       </div>
     </div>

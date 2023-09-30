@@ -4,9 +4,10 @@ import Image from 'next/image';
 
 interface Props {
   width?: number;
+  src?: string;
 }
 
-const ImageSlug: React.FC<Props> = ({ width }) => {
+const ImageSlug: React.FC<Props> = ({ width, src }) => {
   const getWindowWidth = () => {
     const windowWidth = window.innerWidth;
     // Define your breakpoints here
@@ -26,10 +27,10 @@ const ImageSlug: React.FC<Props> = ({ width }) => {
         className="bg-clip-content w-full h-full rounded-full  block animate-spin border-ct-primary-600 border border-b-ct-primary-100"
         style={{ animationDelay: `${Math.floor(Math.random() * 10) * 100}ms` }}
       ></div>
-      <div className=" absolute top-0 w-full h-full">
+      <div className=" absolute top-0 w-full h-full ">
         <Image
-          src="/assets/images/--ct-slug-ex-1.png"
-          className="group-hover:scale-125 transition p-1 w-full h-full"
+          src={src ? src : '/assets/images/--ct-slug-ex-1.png'}
+          className="group-hover:scale-125 transition p-1 w-full h-full rounded-full overflow-hidden"
           alt="image1"
           height={150}
           width={150}

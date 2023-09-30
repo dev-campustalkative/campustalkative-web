@@ -18,7 +18,7 @@ const Community = () => {
             nextArrow={() => <button className="hidden"></button>}
             navigation={() => <div className="hidden"></div>}
           >
-            {Array.from({ length: 5 }, (_, index) => (
+            {Array.from({ length: 11 }, (_, index) => (
               <Image
                 key={index}
                 src={`/assets/images/--ct-community-${index + 1}.jpg`}
@@ -72,7 +72,7 @@ const Community = () => {
             nextArrow={() => <button className="hidden"></button>}
             navigation={() => <div className="hidden"></div>}
           >
-            {Array.from({ length: 5 }, (_, index) => (
+            {Array.from({ length: 11 }, (_, index) => (
               <Image
                 key={index}
                 src={`/assets/images/--ct-community-${index + 1}.jpg`}
