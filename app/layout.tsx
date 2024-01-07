@@ -5,6 +5,9 @@ import Navbar from '@/components/navbar/navbar';
 import Footer from '@/components/footer';
 import { Toaster } from '@/components/ui/sonner';
 
+import { useEffect } from 'react';
+import { LayoutClient } from '@/components/layout-client';
+
 const raleway = Raleway({ subsets: ['latin'] });
 
 export const metadata = {
@@ -20,10 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={raleway.className}>
-        <Toaster />
-        <Navbar />
-        <div>{children}</div>
-        <Footer />
+        <LayoutClient>
+          <Toaster />
+          <Navbar />
+          <div>{children}</div>
+          <Footer />
+        </LayoutClient>
       </body>
     </html>
   );

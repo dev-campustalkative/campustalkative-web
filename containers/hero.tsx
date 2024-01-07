@@ -4,12 +4,17 @@ import Button from '@/components/button';
 import ImageSlug from '@/components/image-slug';
 import { JoinCommunityModal } from '@/components/join-community-modal';
 import { AiOutlineArrowDown } from 'react-icons/ai';
+import { TextGenerateEffect } from '../components/ui/text-generate-effect';
 
 const Hero = () => {
   return (
-    <div className=" pt-36 flex flex-col items-center justify-center gap-8">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      className=" pt-36 flex flex-col items-center justify-center gap-8"
+    >
       <h1 className=" font-sora text-center sm:text-2xl text-5xl font-bold max-w-[821px]">
-        Join the largest community for youth growth and development in Africa
+        <TextGenerateEffect words='Join the largest community for youth growth and development in Africa' />
       </h1>
       <div className=" flex gap-2 sm:gap-3 items-center justify-center sm:flex-col">
         <JoinCommunityModal>

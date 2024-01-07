@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { links } from '@/data/links';
 import { Menu } from 'iconsax-react';
+import { JoinCommunityModal } from '../join-community-modal';
 
 const Join = () => {
   const [navShow, setNavShow] = useState(false);
@@ -23,7 +24,9 @@ const Join = () => {
   return (
     <div className="w-full  items-center justify-end flex">
       <div className="hidden mmd:block">
-        <Button onClick={() => toggleNav}>Join community</Button>
+        <JoinCommunityModal>
+          <Button onClick={() => toggleNav}>Join community</Button>
+        </JoinCommunityModal>
       </div>
       <div className="block mmd:hidden">
         {!navShow && (
@@ -60,7 +63,9 @@ const Join = () => {
                 </div>
               ))}
               <div className="px-12">
-                <Button onClick={() => {}}>Join Community</Button>
+                <JoinCommunityModal>
+                  <Button onClick={() => {}}>Join Community</Button>
+                </JoinCommunityModal>
               </div>
             </div>
           </nav>

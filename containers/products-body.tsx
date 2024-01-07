@@ -6,11 +6,17 @@ const ProductsBody = () => {
   return (
     <div className="py-12">
       <div className="flex items-center justify-center gap-6 py-12 md:flex-col-reverse">
-        <div className="flex flex-col items-start gap-6 max-w-[668px] md:gap-3">
+        <div
+          data-aos="fade-right"
+          className="flex flex-col items-start gap-6 max-w-[668px] md:gap-3"
+        >
           <h2 className="font-sora text-3xl font-bold text-ct-grey-1000">
             CT Merch
           </h2>
-          <div className="mmd:hidden w-full h-full rounded-[32px] border border-ct-secondary-300 shadow-ct-lg transform mmd:rotate-12 ">
+          <div
+            data-aos="fade-up"
+            className="mmd:hidden w-full h-full rounded-[32px] border border-ct-secondary-300 shadow-ct-lg transform mmd:rotate-12 "
+          >
             <Image
               src="/assets/images/--ct-products-1.png"
               alt="campustalkative merch"
@@ -36,7 +42,10 @@ const ProductsBody = () => {
             </ComingSoonModal>
           </div>
         </div>
-        <div className="md:hidden w-full h-full rounded-[32px] border border-ct-secondary-300 shadow-ct-lg transform mmd:rotate-12 ">
+        <div
+          data-aos="flip-right"
+          className="md:hidden w-full h-full rounded-[32px] border border-ct-secondary-300 shadow-ct-lg transform mmd:rotate-12 "
+        >
           <Image
             src="/assets/images/--ct-products-1.png"
             alt="campustalkative merch"
@@ -47,11 +56,17 @@ const ProductsBody = () => {
         </div>
       </div>
       <div className="flex flex-row-reverse items-center justify-center gap-12 py-12 md:flex-col-reverse md:gap-6">
-        <div className="flex flex-col items-start gap-6 max-w-[668px] md:gap-3">
+        <div
+          data-aos="fade-left"
+          className="flex flex-col items-start gap-6 max-w-[668px] md:gap-3"
+        >
           <h2 className="font-sora text-3xl font-bold text-ct-grey-1000">
             Workspace Deals
           </h2>
-          <div className="mmd:hidden w-full h-full rounded-[32px] border border-ct-secondary-300 shadow-ct-lg transform mmd:rotate-12 ">
+          <div
+            data-aos="fade-up"
+            className="mmd:hidden w-full h-full rounded-[32px] border border-ct-secondary-300 shadow-ct-lg transform mmd:rotate-12 "
+          >
             <Image
               src="/assets/images/--ct-products-1.png"
               alt="campustalkative merch"
@@ -77,7 +92,10 @@ const ProductsBody = () => {
             </ComingSoonModal>
           </div>
         </div>
-        <div className="md:hidden w-full h-full rounded-[32px] border border-ct-secondary-300 shadow-ct-lg transform mmd:-rotate-12 ">
+        <div
+          data-aos="flip-left"
+          className="md:hidden w-full h-full rounded-[32px] border border-ct-secondary-300 shadow-ct-lg transform mmd:-rotate-12 "
+        >
           <Image
             src="/assets/images/--ct-products-1.png"
             alt="campustalkative merch"

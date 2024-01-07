@@ -2,7 +2,11 @@
 
 const Resources = () => {
   return (
-    <div className="max-w-[788px] mx-auto">
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      className="max-w-[788px] mx-auto"
+    >
       <h2 className="text-ct-grey-1000 text-3xl font-bold my-2 sm:text-xl">
         We care about our community and bring the best resources and opportunity
         to meet and network

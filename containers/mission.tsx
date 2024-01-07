@@ -6,7 +6,10 @@ import MissionCard from '@/components/mission-card';
 const Mission = () => {
   return (
     <div className="flex md:flex-col py-12">
-      <div className="transform -rotate-12 relative z-10 mmd:hover:rotate-0 mmd:hover:scale-150 mmd:duration-300 group md:rotate-[-5deg]">
+      <div
+        data-aos="flip-left"
+        className="transform -rotate-12 relative z-10 mmd:hover:rotate-0 mmd:hover:scale-150 mmd:duration-300 group md:rotate-[-5deg]"
+      >
         <MissionCard
           title="Our mission"
           text="Campustalkative is a community-focused platform that aims to empower and inspire the youth of Africa. It started with a vision to create a space where young people can connect, network, and grow together. It offers various resources and opportunities for its members, such as events, online courses, mentorship programs, and partnerships with other organizations. Some of the events that Campustalkative organizes."
@@ -19,7 +22,10 @@ const Mission = () => {
           height={139}
         />
       </div>
-      <div className="transform rotate-12 relative mt-12  mmd:hover:z-20 mmd:hover:rotate-0 mmd:hover:scale-150 duration-300 group md:rotate-[5deg]">
+      <div
+        data-aos="flip-right"
+        className="transform rotate-12 relative mt-12  mmd:hover:z-20 mmd:hover:rotate-0 mmd:hover:scale-150 duration-300 group md:rotate-[5deg]"
+      >
         <MissionCard
           title="Our values"
           text="Campustalkative is a community-focused platform that aims to empower and inspire the youth of Africa. It started with a vision to create a space where young people can connect, network, and grow together. It offers various resources and opportunities for its members, such as events, online courses, mentorship programs, and partnerships with other organizations. Some of the events that Campustalkative organizes."

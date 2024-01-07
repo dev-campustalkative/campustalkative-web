@@ -6,7 +6,10 @@ import ComingSoonModal from '@/components/coming-soon-modal';
 
 const Support = () => {
   return (
-    <div className=" rounded-3xl p-12 bg-ct-grey-1000 flex gap-8 md:my-12 md:flex-col md:gap-6 md:p-6 sm:my-6 my-12 mb-36">
+    <div
+      data-aos="fade-right"
+      className=" rounded-3xl p-12 bg-ct-grey-1000 flex gap-8 md:my-12 md:flex-col md:gap-6 md:p-6 sm:my-6 my-12 mb-36"
+    >
       <div className="flex flex-col gap-6 w-full items-start">
         <div className="flex gap-6 flex-row w-full">
           <div className="h-full">

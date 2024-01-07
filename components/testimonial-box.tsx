@@ -56,7 +56,10 @@ const TestimonialBox = () => {
   };
 
   return (
-    <div className=" rounded-3xl border-2 border-ct-secondary-600 border-dashed p-8 flex justify-between mx-auto max-w-[1480px] sm:flex-col sm:p-6 ">
+    <div
+      data-aos="fade-up"
+      className=" rounded-3xl border-2 border-ct-secondary-600 border-dashed p-8 flex justify-between mx-auto max-w-[1480px] sm:flex-col sm:p-6 "
+    >
       <div className="flex-1">
         <div
           ref={testimoniesRef}

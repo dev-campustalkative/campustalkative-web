@@ -6,7 +6,7 @@ import Metric from '@/components/metric';
 const Journey = () => {
   return (
     <div className="my-12">
-      <div className="mmd:max-w-[65%] ml-auto">
+      <div data-aos="fade-up" className="mmd:max-w-[65%] ml-auto">
         <h2 className=" text-2xl font-sora font-bold text-ct-grey-1000 my-2">
           Our journey has been a really long and exciting.
         </h2>
@@ -32,6 +32,7 @@ const Journey = () => {
         </p>
       </div>
       <div
+        data-aos="fade-up-right"
         style={{
           backgroundImage: 'url(/assets/icons/--ct-journey-slug.svg)',
           backgroundRepeat: 'no-repeat',

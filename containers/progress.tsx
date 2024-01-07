@@ -6,7 +6,7 @@ import Metric from '@/components/metric';
 const Progress = () => {
   return (
     <div className="py-20 flex sm:flex-col-reverse sm:py-6">
-      <div className="">
+      <div data-aos="fade-right" className="">
         <div className="max-w-[742px] mb-8 sm:mb-4">
           <h1 className="text-base text-ct-primary-800">OUR PROGRESS</h1>
           <p className=" text-4xl font-bold text-ct-grey-1000 sm:text-xl">
@@ -51,7 +51,7 @@ const Progress = () => {
           <Metric num={4678}>Members and Counting</Metric>
         </div>
       </div>
-      <div className="relative">
+      <div data-aos="fade-left" data-aos-duration="600" className="relative">
         <Image
           src="/assets/images/--ct-earth.png"
           alt="earth"

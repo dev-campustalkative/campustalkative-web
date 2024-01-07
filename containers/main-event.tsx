@@ -6,7 +6,7 @@ import ComingSoonModal from '@/components/coming-soon-modal';
 const MainEvent = () => {
   return (
     <div className="pt-36 md:py-12 flex gap-6 md:flex-col">
-      <div className="w-full">
+      <div data-aos="fade-right" className="w-full">
         <div className="flex flex-col items-start gap-6 md:gap-3">
           <Date text="12th May, 2023" />
           <div className="mmd:hidden w-full h-full rounded-[32px] border border-ct-secondary-300 shadow-ct-lg">
@@ -41,7 +41,7 @@ const MainEvent = () => {
           </div>
         </div>
       </div>
-      <div className="w-full">
+      <div data-aos="fade-left" className="w-full">
         <div className="md:hidden w-full h-full rounded-[32px] border border-ct-secondary-300 shadow-ct-lg">
           <Image
             src="/assets/images/--ct-products-1.png"

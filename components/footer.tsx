@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="mx-6">
+    <footer data-aos="fade-left" className="mx-6">
       <Container>
         <Contact />
       </Container>

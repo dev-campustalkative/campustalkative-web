@@ -2,6 +2,7 @@
 
 import JoinImages from '@/components/join-images';
 import Button from '@/components/secondary-button';
+import Link from 'next/link';
 import { RiWhatsappFill, RiTelegramFill } from 'react-icons/ri';
 
 const JoinHeader = () => {
@@ -22,8 +23,20 @@ const JoinHeader = () => {
       </div>
       <div className="flex justify-center items-center my-4">
         <div className="flex flex-col  gap-4">
-          <Button icon={RiWhatsappFill}>CT Whatsapp community</Button>
-          <Button icon={RiTelegramFill}>CT Telegram channel</Button>
+          <Link
+            href="https://join.slack.com/t/campustalkative/shared_invite/zt-1onngpe3l-LFu1TtODxkyjQPwnW773qQ"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button icon={RiWhatsappFill}>CT Whatsapp community</Button>
+          </Link>
+          <Link
+            href="https://t.me/+U8J2O3guPCkxMDI8"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button icon={RiTelegramFill}>CT Telegram channel</Button>
+          </Link>
         </div>
       </div>
     </div>
